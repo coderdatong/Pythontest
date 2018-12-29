@@ -1,10 +1,13 @@
 import  random
 import  math
-num=input("请输入一个三位数：")
-# 输入函数的是字符类型，不强制转换回报错
-if num.isdigit() and 100<=int(num)<=999:
-        pass
-else:
-    print("请按规定输入")
+str_num=''
+for i in range(4):
+    num2 = random.randrange(97, 123)
+    str_s = chr(num2)
+    str_num += str_s
+for i in range(8):
+    num3 = random.randrange(0, 9)
+    str_num += str(num3)
+print(str_num)
 
 
