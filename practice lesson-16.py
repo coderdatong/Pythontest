@@ -25,5 +25,10 @@ if int(num)>num1:
 if int(num)==num1:
     print(100+"you are rewarded"+num1)
 if int(num)<num1:
-   num4= save()
-   print(num4+"  the ramdom number is :{}".format(num1))
+   #由于120个字符每一行12个可知只需存入10行就可以
+   for i in range(10):
+        num4= save()
+        #with open as 读写文件的解释https://www.cnblogs.com/ymjyqsx/p/6554817.html
+        with open('str_num.txt','w')as f:
+            f.write(num4)
+
